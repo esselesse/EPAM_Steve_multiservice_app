@@ -4,6 +4,8 @@ import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import com.epam.javacore2019.steve2.dbservice.data.query.operator.BooleanOperator;
+
 public class WHEREParser {
 
     public static final String CLAUSE = "^([\\s]*WHERE[\\s]+)([a-zA-Z0-9><=! ]+)";

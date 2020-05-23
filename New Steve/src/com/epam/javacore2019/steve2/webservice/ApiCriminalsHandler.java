@@ -6,7 +6,6 @@ import com.sun.net.httpserver.HttpHandler;
 import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.net.URLConnection;
 
 public class ApiCriminalsHandler implements HttpHandler {
 

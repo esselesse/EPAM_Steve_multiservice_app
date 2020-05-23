@@ -1,5 +1,6 @@
-package com.epam.javacore2019.steve2.webservice;
+package com.epam.javacore2019.steve2.webservice.oldStaticHandlers;
 
+import com.epam.javacore2019.steve2.webservice.Utils;
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
 

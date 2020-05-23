@@ -1,0 +1,9 @@
+<configuration>
+    <connections>
+        <connection password="qwerty" username="admin" url="http://localhost:6701/api/query" name="SteveDB"/>
+    </connections>
+
+    <handlers>
+        <handler name="Criminals" class="com.epam.javacore2019.steve2.appserver.CriminalsApiHandler" path="/api/criminals"/>
+    </handlers>
+</configuration>

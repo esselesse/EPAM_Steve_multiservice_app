@@ -1,7 +1,6 @@
-package com.epam.javacore2019.steve2.dbservice.data.query;
+package com.epam.javacore2019.steve2.dbservice.data.query.operator;
 
 public class OperatorAND implements BooleanOperator {
-    //todo вывалиться на false
     @Override
     public boolean operate(Object... operands) {
         boolean result = true;
@@ -11,6 +10,7 @@ public class OperatorAND implements BooleanOperator {
             } else {
                 result = result && (Boolean)operand;
             }
+            if (!result) return false;
         }
         return result;
     }

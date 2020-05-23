@@ -3,6 +3,10 @@ package com.epam.javacore2019.steve2.dbservice.test;
 import com.epam.javacore2019.steve2.dbservice.data.TableColumn;
 import com.epam.javacore2019.steve2.dbservice.data.TableRow;
 import com.epam.javacore2019.steve2.dbservice.data.query.*;
+import com.epam.javacore2019.steve2.dbservice.data.query.operator.BooleanOperator;
+import com.epam.javacore2019.steve2.dbservice.data.query.operator.OperatorAND;
+import com.epam.javacore2019.steve2.dbservice.data.query.operator.OperatorEQ;
+import com.epam.javacore2019.steve2.dbservice.data.query.operator.OperatorOR;
 
 import java.util.HashMap;
 import java.util.List;
@@ -27,7 +31,6 @@ public class WHERETest {
             new TableColumn("numberOfCrimes")
             //Class.forName("").getDeclaredMethods(); - рефлексия
             //можно сделать инстанс типа метод и запустить через method.invoke
-
     };
 
     public static final TableRow[] rows = new TableRow[]{

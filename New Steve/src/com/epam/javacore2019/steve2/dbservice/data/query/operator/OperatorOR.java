@@ -1,4 +1,4 @@
-package com.epam.javacore2019.steve2.dbservice.data.query;
+package com.epam.javacore2019.steve2.dbservice.data.query.operator;
 
 public class OperatorOR implements BooleanOperator {
     @Override

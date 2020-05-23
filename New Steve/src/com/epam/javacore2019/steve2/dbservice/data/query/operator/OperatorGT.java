@@ -1,7 +1,4 @@
-package com.epam.javacore2019.steve2.dbservice.data.query;
-
-import java.io.InputStream;
-import java.security.InvalidParameterException;
+package com.epam.javacore2019.steve2.dbservice.data.query.operator;
 
 public class OperatorGT implements BooleanOperator {
     @Override
