@@ -1,12 +1,14 @@
-package com.epam.javacore2019.steve2.appserver;
+package com.epam.javacore2019.steve2.appserver.dao;
 
 import java.util.List;
+
+import com.epam.javacore2019.steve2.appserver.ModelCriminal;
 
 public interface CriminalDAO {
 
     ModelCriminal get(int id);
 
-    //List<ModelCriminal> getAll;
+    List<ModelCriminal> getAll();
 
     List<ModelCriminal> getAll(String filter);
 
@@ -15,6 +17,16 @@ public interface CriminalDAO {
     void update(ModelCriminal model);
 
     void delete(int id);
+
+    static CriminalDAO createDAO() {
+        if (System.getProperty("env").equals("dev")) {
+            return new SteveDBCriminalDAO();
+        }
+        if (System.getProperty("env").equals("prod")) {
+            return new JDBCCriminalDAO();
+        }
+        return null;
+    };
 
 }
 

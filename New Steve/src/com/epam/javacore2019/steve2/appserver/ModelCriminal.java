@@ -50,7 +50,7 @@ public class ModelCriminal {
         this.id = id;
     }
 
-    public static class Builder{
+    public static class Builder {
         //БИЛДЕР!!!!! вместо кучи разных конструкторов, которые приходилось бы переопределять
         //+ сразу валидация вводимых данных
         //использовать только там, где обосновано, т.е. там, где нужна валидация и вычисление зависимых полей
@@ -67,12 +67,44 @@ public class ModelCriminal {
             model.setId(id);
         }
 
+        public void setNickName(String nickName) {
+            model.setNickName(nickName);
+        }
+
+        public String getFirstName() {
+            return model.getFirstName();
+        }
+
+        public String getLastName() {
+            return model.getLastName();
+        }
+
+        public void setFirstName(String firstName) {
+            model.setFirstName(firstName);
+        }
+
+        public void setLastName(String lastName) {
+            model.setLastName(lastName);
+        }
+
+        public String getNickName(){
+            return model.getNickName();
+        }
+
+        public int getCrimeFamilyId() {
+            return model.getCrimeFamilyId();
+        }
+
+        public void setCrimeFamilyId(int crimeFamilyId) {
+            model.setCrimeFamilyId(crimeFamilyId);
+        }
         //....
 
         public ModelCriminal build(){
             //validate parameters
             //set defaults
             //calculate dependent fields
+            //todo
             return model;
         }
 
